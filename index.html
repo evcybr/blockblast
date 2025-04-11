@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devs Game</title>
+    <meta name="description" content="A relaxing block puzzle game where you place pieces strategically to clear lines and create your zen garden" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body class="light-mode">
+    <div class="container">
+      <header>
+        <h1>Block Puzzle Devs</h1>
+        <p>Place blocks, clear lines, find your zen</p>
+
+        <!-- Control panel at the top -->
+        <div class="top-controls">
+          <div class="score-panel">
+            <h2>Score</h2>
+            <div class="current-score">0</div>
+            <div class="high-score">High Score: 0</div>
+          </div>
+          <div class="game-controls">
+            <button id="info-button">How to Play</button>
+            <button id="reset-button">Reset Game</button>
+          </div>
+          <button id="theme-toggle" aria-label="Toggle dark/light mode">
+            <span class="toggle-icon">☀️</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="game-wrapper">
+        <!-- Center - Game board -->
+        <div class="game-board-container">
+          <div id="game-board"></div>
+          <div id="placement-preview"></div>
+        </div>
+
+        <!-- Right side - Next blocks -->
+        <div class="next-blocks">
+          <h2>Next Blocks</h2>
+          <div id="blocks-container"></div>
+        </div>
+      </div>
+
+      <div id="game-over" class="hidden">
+        <div class="game-over-content">
+          <h2>Game Over!</h2>
+          <p>Final Score: <span class="final-score">0</span></p>
+          <button id="play-again">Play Again</button>
+        </div>
+      </div>
+
+      <div id="toast" class="hidden"></div>
+
+      <!-- Modal How to Play -->
+<div id="how-to-play-modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-modal" class="close-button">&times;</span>
+    <h2>How to Play</h2>
+    <ul>
+      <li>🎯 Select a block from the right panel.</li>
+      <li>🧩 Click on the grid to place the block.</li>
+      <li>✅ Clear full rows or columns to earn points.</li>
+      <li>🔁 Click "Reset Game" to start again.</li>
+      <li>🌙 Use the toggle to switch between dark and light mode.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Sosial Media Section -->
+<div class="social-section">
+  <h3>Gas Follow Sosmed Mimin Yach</h3>
+  <div class="social-icons">
+    <a href="https://instagram.com/evcybr" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+    </a>
+    <a href="https://wa.me/62895633779292" target="_blank" aria-label="WhatsApp">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Block Puzzle Devs - All Rights Reserved 💻</p>
+</footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
